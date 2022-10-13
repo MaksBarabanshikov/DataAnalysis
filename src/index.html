@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
                 <h1>DataAnalisys</h1>
               </a>
             </div>
-          </header>
+        </header>
         <main class="data-analysis container text-center">
             <div class="data__wrapper">
                 <section class="data-analysis__head m-auto">
@@ -25,10 +25,13 @@
                         <span id="resultArr">12,12,12,12</span>
                     </h2>
                     <div class="input-group mb-4">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
-                        <button class="btn btn-primary" type="button">OK</button>
-                        <button class="btn btn-danger" type="button">Clear</button>
-                      </div>
+                        <input id="myInput"
+                               type="number"
+                               class="form-control"
+                               placeholder="Введите елементы массива через пробел">
+                        <button id="btnAdd" class="btn btn-primary" type="button">Add</button>
+                        <button id="btnClear" class="btn btn-danger" type="button">Clear</button>
+                    </div>
                     <div class="data-analysis__control control">
                         <button class="control__add btn btn-primary">Sum</button>
                         <button class="control__clear btn btn-success">Average</button>
@@ -39,5 +42,6 @@
             </div>
         </main>
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
