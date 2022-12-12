@@ -61,15 +61,17 @@ window.addEventListener('load', () => {
         average()
         inter()
         sort()
+        let sum5 = 0
         // issue 1
         function sum() {
-            const sum = 0
-
+            const sum = [...arr].reduce((a,b) => a + b)
             resultSumDOM.textContent = sum.toString()
         }
         // issue 2
         function average() {
-            const average = 0
+            const summa = [...arr].reduce((a,b) => a + b)
+            // const average = sum5 / arr.length
+            const average = summa/ arr.length
             resultAverageDOM.textContent = average.toString()
         }
         // issue 3
@@ -81,7 +83,7 @@ window.addEventListener('load', () => {
         }
         // issue 4
         function inter() {
-            const inter = 0
+            const inter = Math.random()
             resultInterDOM.textContent = inter.toString()
         }
         // issue 5
