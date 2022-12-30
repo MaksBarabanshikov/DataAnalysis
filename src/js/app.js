@@ -61,7 +61,6 @@ window.addEventListener('load', () => {
         average()
         inter()
         sort()
-        let sum5 = 0
         // issue 1
         function sum() {
             const sum = [...arr].reduce((a,b) => a + b)
@@ -86,7 +85,7 @@ window.addEventListener('load', () => {
             const inter = Math.random()
             resultInterDOM.textContent = inter.toString()
         }
-        // issue 5
+
     }
 
     // helper
